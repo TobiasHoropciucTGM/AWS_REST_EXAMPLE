@@ -13,3 +13,6 @@ def register(request):
         "password": request.GET.get('password')
     }
     return HttpResponse(params.items())
+
+def test(request):
+    return HttpResponse("Test successful")
